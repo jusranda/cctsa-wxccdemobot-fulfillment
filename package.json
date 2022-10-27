@@ -1,0 +1,25 @@
+{
+  "name": "cctsa-wxccdemobot-fulfillment",
+  "version": "0.0.1",
+  "description": "Cloud Run or Cloud Function implementing the WxCC Demobot webhook fulfillment API gateway for Dialogflow ES-based virtual agents.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jusranda/cctsa-wxccdemobot-fulfillment.git"
+  },
+  "author": "Justin Randall",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jusranda/cctsa-wxccdemobot-fulfillment/issues"
+  },
+  "homepage": "https://github.com/jusranda/cctsa-wxccdemobot-fulfillment#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cctsa-wxccdemobot-commons": "^0.0.138",
+    "codingforconvos": "^0.0.124",
+    "express": "^4.18.2"
+  }
+}
