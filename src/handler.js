@@ -41,7 +41,8 @@ const convoClient = new DialogFlowEsClient({
         const customerValidatedString = (payload.customerValidated) ? payload.customerValidated : 'false';
         context.parameters.customerValidated = (customerValidatedString === 'true') ? '1' : '0';
         
-        context.parameters.companyName = (payload.companyName) ? payload.companyName : 'JCMG';
+        const defaultName = process.env.COMPANY_NAME || 'Cisco';
+        context.parameters.companyName = payload.companyName || defaultName;
         
         return context;
     },
