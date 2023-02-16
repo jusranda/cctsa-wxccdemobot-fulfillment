@@ -137,6 +137,8 @@ async function handleFulfillment (req, res) {
     console.log(fmtLog('handleRequest', 'Dialogflow Request headers: ' + JSON.stringify(req.headers)));
     console.log(fmtLog('handleRequest', 'Dialogflow Request body: ' + JSON.stringify(req.body)));
 
+    // Make a comment to show auto-push.
+
     return await convoClient.handleRequest(req, res);
 }
 
